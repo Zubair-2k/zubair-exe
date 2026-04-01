@@ -174,7 +174,7 @@ const Projects = () => {
                 </div>
 
                 <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Cooking_App.png")}
+                onMouseEnter={()=>handleMouseEnter("/Cooking_App.webp")}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -197,7 +197,7 @@ const Projects = () => {
                 </div>
 
                 <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Spiderman_Website.png")}
+                onMouseEnter={()=>handleMouseEnter("/Spiderman_Website.webp")}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -218,7 +218,7 @@ const Projects = () => {
                 </div>
 
                 <div className="projectsContent" 
-                onMouseEnter={()=>handleMouseEnter("/StreamFlix_Website.png")}
+                onMouseEnter={()=>handleMouseEnter("/StreamFlix_Website.webp")}
                 onMouseLeave={handleMouseLeave}
                 >
 
