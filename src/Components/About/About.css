@@ -1,0 +1,307 @@
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 0 0px 20px;
+    /* background-color: #c8c8c8; */
+    background:#ffdab5;
+    color:#111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* overflow-x: hidden; */
+    position: relative;
+
+}
+
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.aboutContent{
+    width: 50%;
+    font-family: "Space Grotesk", sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* justify-content: space-around; */
+    /* background-color: red; */
+    padding: 30px;
+    text-align: left;
+    /* align-items: flex-start; */
+}
+
+.aboutContent1{
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.welcomeText{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+}
+
+.introText{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    /* padding: 0 10px; */
+}
+
+.introText .aboutName{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 900;
+    padding: 5px 10px;
+    background-color: black;
+    color: #ffdab5;
+    /* color: orangered; */
+}
+
+.jobIntro{
+    font-family: "Alex Brush", cursive;
+    font-size: 40px;
+    position: absolute;
+    left: 45%;
+    bottom: -35%;
+    transform: translate(-50%,-50%);
+    color: orangered;
+}
+
+.aboutContent2{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Iosevka Charon Mono", monospace;
+    /* font-size: 16px; */
+    font-weight: 900;
+    position: relative;
+}
+
+.aboutMeHead{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 10px;
+    position: absolute;
+    top: -30%;
+    right: 0;
+    /* background-color: red; */
+}
+
+.aboutMeText{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+.downAboutIcon{
+    width: 60px;
+    /* rotate: -25deg; */
+}
+
+.rightDownAboutIcon{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutMeImgContainer{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aboutMeImg{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+@media (max-height: 700px) {
+  /* Adjust hero section */
+}
+
+
+@media (min-width: 1281px) {
+  /* Large desktops */
+}
+
+@media (max-width: 1280px) {
+  /* Normal laptops */
+
+    .welcomeText{
+        font-size: 90px;
+    }
+    
+    .introText{
+        font-size: 30px;
+    }
+
+    .aboutMeHead{
+        width: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+  /* Tablets / small laptops */
+
+    .aboutContent{
+        width: fit-content;
+    }
+
+    .aboutMeImgContainer{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+  /* Tablets + large phones */
+
+    .about{
+        padding: 0;
+    }
+
+    .welcomeText{
+        font-size: 70px;
+    }
+
+    .aboutMeHead{
+        width: 25%;
+        gap: 0;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .about{
+        padding: 0px;
+    }
+
+    .aboutContent{
+        width: 100%;
+    }
+    
+    .welcomeText{
+        font-size: 60px;
+    }
+    
+    .introText{
+        font-size: 20px;
+    }
+    
+    .aboutContent2{
+        gap: 20px;
+    }
+    
+    .aboutMeHead{
+        gap: 0;
+        top: -85%;
+    }
+
+    .aboutMeText{
+        font-size: 18px;
+    }
+    
+    .downAboutIcon{
+        width: 30px;
+    }
+    
+    .aboutDesc{
+        font-size: 13px;
+    }
+    
+    .aboutMeImgContainer{
+        display: none;
+    }
+}
+
+@media (max-width: 391px) {
+    .aboutContent{
+        gap: 20px;
+    }
+
+    .welcomeText{
+        font-size: 40px;
+    }
+
+    .introText{
+        font-size: 15px;
+    }
+
+    .aboutContent2{
+        gap: 10px;
+    }
+
+    .aboutMeHead{
+        top: -30%;
+        right: -10%;
+    }
+
+    .aboutMeText{
+        font-size: 14px;
+    }
+
+    .downAboutIcon{
+        width: 20px;
+    }
+}
+
+/* Very small devices */
+@media (max-height: 568px) {
+}
+
+/* Small mobile */
+@media (max-height: 640px) {
+  /* Adjust spacing */
+}
+
+/* Medium mobile */
+@media (max-width: 480px) and (max-height: 700px) {
+  /* Minor tweaks */
+
+  .aboutContent{
+        gap: 20px;
+    }
+
+    .welcomeText{
+        font-size: 40px;
+    }
+
+    .introText{
+        font-size: 15px;
+    }
+
+    .aboutContent2{
+        gap: 10px;
+    }
+
+    .aboutMeHead{
+        top: -30%;
+        right: -10%;
+    }
+
+    .aboutMeText{
+        font-size: 14px;
+    }
+
+    .downAboutIcon{
+        width: 20px;
+    }
+}

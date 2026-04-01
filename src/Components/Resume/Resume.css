@@ -1,0 +1,49 @@
+.resume {
+    background-color: black;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 200;
+    border-radius: 10px;
+}
+
+.resumeContainer {
+    /* border: 1px solid white; */
+    padding: 10px 25px;
+    font-family: "MonacoCustom", monospace;
+    cursor: pointer;
+    color: #00ff90;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+/* DEFAULT STATE → only cursor */
+.resumeBtn {
+    font-size: 35px;
+    color: #00ff90;
+    /* color: #00eaff; */
+    /* color: #ff7a00; */
+    color: rgb(255, 86, 114);
+}
+
+/* hide text initially */
+.resumeText {
+    display: none;
+    font-size: 35px;
+    color: rgb(255, 86, 114);
+    margin-left: 5px;
+}
+
+.resumeContainer:hover .resumeText {
+    display: inline;
+}
+
+/* blinking cursor */
+.cursorResumeBtn {
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}

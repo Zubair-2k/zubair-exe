@@ -1,0 +1,35 @@
+.headerContent1{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.headerContent1BigText {
+    width: 100%;
+    font-size: 70px;
+}
+
+.headerContent1SmallText {
+    width: 50%;
+    font-size: 12px;
+}
+
+.headerContent2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+.headerContent2SmallText {
+    width: 50%;
+    font-size: 12px;
+}
+
+.headerContent2BigText {
+    font-size: 30px;
+    letter-spacing: 2px;
+}

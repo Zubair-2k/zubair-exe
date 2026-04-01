@@ -1,0 +1,669 @@
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    padding: 3rem 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactPageBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ContactPageBgImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactPageOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.661); */
+    /* background-color: rgba(0, 0, 0, 0.378); */
+    background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.contactContainer{
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.getInTouch{
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.getInTouchHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    text-align: left;
+    /* background-color: green; */
+}
+
+.getInTouchHeading{
+    /* font-size: 30px; */
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.getInTouchDesc{
+    font-size: 12px;
+    color: rgb(185, 185, 185);
+}
+
+.getIntouchContainer{
+    /* background-color: rgb(1, 81, 81); */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.getInTouchContent{
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: rgba(57, 57, 57, 0.291);
+    /* background-color: white;
+    color: black; */
+}
+
+.getInTouchContentLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.getInTouchContentIcon{
+    padding: 10px;
+    border: 2px solid rgba(88, 88, 88, 0.636);
+    background-color: rgba(12, 12, 12, 0.612);
+    box-shadow: 0px 0px 5px rgba(228, 228, 228, 0.416);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.getInTouchContentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.getInTouchContentContainerHeading{
+    color: white;
+    /* color: black; */
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.getInTouchContentContainerText{
+    font-size: 12px;
+    color: rgb(174, 174, 174);
+    /* color: black; */
+}
+
+.getIntouchMap{
+    text-decoration: none;
+    color: white;
+}
+
+.getInTouchContentApplyIcon{
+    padding: 3px 8px;
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    background-color: rgba(49, 49, 49, 0.636);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.getInTouchContentApplyIcon:hover{
+    scale: 1.2;
+}
+
+.getInTouchContentApplyIcon i{
+    font-size: 18px;
+}
+
+.contactForm{
+    width: 50%;
+    height: 70%;
+    /* background-color: cadetblue; */
+}
+
+.contactFormContainer{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.409);
+}
+
+.contactName{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.contactName input{
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(57, 57, 57, 0.177);
+    border: none;
+}
+
+.contactName input::placeholder{
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(212, 212, 212);
+    font-weight: 500;
+}
+
+.contactEmail{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.contactEmail input{
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(57, 57, 57, 0.177);
+    border: none;
+}
+
+.contactName input:-webkit-autofill,
+.contactEmail input:-webkit-autofill{
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.contactEmail input::placeholder{
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(212, 212, 212);
+    font-weight: 500;
+}
+
+.emailStatus{
+    font-family: "Space Grotesk", sans-serif;
+    color: red;
+    font-size: 12px;
+    padding: 1px 0 0 0;
+}
+
+.contactMessage{
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    border: none;
+}
+
+.contactMessage textarea{
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(57, 57, 57, 0.177);
+    border: none;
+}
+
+.contactMessage textarea::placeholder{
+    
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(212, 212, 212);
+    font-weight: 500;
+}
+
+.submitBtnContainer{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.submitBtnContainer button{
+    font-family: "Space Grotesk", sans-serif;
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.submitBtnContainer button:hover{
+    background-color: rgb(199, 199, 199);
+    /* background-color: rgb(180, 180, 180);  */
+}
+
+@media (max-height: 700px) {
+  /* Adjust hero section */
+}
+
+
+@media (min-width: 1281px) {
+  /* Large desktops */
+}
+
+@media (max-width: 1280px) {
+  /* Normal laptops */
+
+  .getInTouchHeader{
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Tablets / small laptops */
+
+  .contact{
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Tablets + large phones */
+
+  .contact{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 1.5rem 2rem;
+        position: relative;
+    }
+
+    .contactContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .getInTouch{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .getInTouchHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .getIntouchContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        height: 70%;
+    }
+
+    .contact{
+        padding: 1rem;
+    }
+
+    .contactContainer{
+        gap: 10px;
+    }
+
+    .getInTouch{
+        gap: 10px;
+    }
+
+    .getInTouchHeading{
+        font-size: 20px;
+    }
+
+    .getInTouchDesc{
+        font-size: 10px;
+    }
+
+    .getInTouchContent{
+        padding: 10px 15px;
+    }
+
+    .getInTouchContentLeft{
+        gap: 20px;
+    }
+
+    .getInTouchContentContainerHeading{
+        font-size: 15px;
+    }
+
+    .getInTouchContentContainerText{
+        font-size: 14px;
+    }
+
+    .contactForm{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contactFormContainer{
+        gap: 8px;
+        border-radius: 5px;
+    }
+
+    /* .contactName input{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactName input::placeholder{
+        font-size: 12px;
+    }
+
+    .contactEmail input{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactEmail input::placeholder{
+        font-size: 12px;
+    }
+
+    .contactMessage{
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .contactMessage textarea{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactMessage textarea::placeholder{
+        font-size: 12px;
+    }
+
+    .submitBtnContainer button{
+        padding: 10px 15px;
+        border-radius: 5px;
+    } */
+}
+
+@media (max-width: 480px) {
+    .contact{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        padding: 1.5rem 2rem;
+        position: relative;
+    }
+
+    .contactContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        z-index: 100;
+    }
+
+    .getInTouch{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .getInTouchHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .getIntouchContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        height: 70%;
+    }
+
+    .contact{
+        padding: 1rem;
+    }
+
+    .contactContainer{
+        gap: 10px;
+    }
+
+    .getInTouch{
+        gap: 10px;
+    }
+
+    .getInTouchHeading{
+        font-size: 20px;
+    }
+
+    .getInTouchDesc{
+        font-size: 8px;
+    }
+
+    .getInTouchContent{
+        padding: 10px 15px;
+    }
+
+    .getInTouchContentLeft{
+        gap: 20px;
+    }
+
+    .getInTouchContentContainerHeading{
+        font-size: 10px;
+    }
+
+    .getInTouchContentContainerText{
+        font-size: 9px;
+    }
+
+    .contactForm{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contactFormContainer{
+        gap: 8px;
+        border-radius: 5px;
+    }
+
+    .contactName input{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactName input::placeholder{
+        font-size: 12px;
+    }
+
+    .contactEmail input{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactEmail input::placeholder{
+        font-size: 12px;
+    }
+
+    .contactMessage{
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .contactMessage textarea{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactMessage textarea::placeholder{
+        font-size: 12px;
+    }
+
+    .submitBtnContainer button{
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) and (max-height: 700px) {
+
+  .contact{
+        padding: 1rem;
+    }
+
+    .contactContainer{
+        gap: 10px;
+    }
+
+    .getInTouch{
+        gap: 10px;
+    }
+
+    .getInTouchHeading{
+        font-size: 20px;
+    }
+
+    .getInTouchDesc{
+        font-size: 8px;
+    }
+
+    .getInTouchContent{
+        padding: 10px 15px;
+    }
+
+    .getInTouchContentLeft{
+        gap: 20px;
+    }
+
+    .getInTouchContentContainerHeading{
+        font-size: 10px;
+    }
+
+    .getInTouchContentContainerText{
+        font-size: 9px;
+    }
+
+    .contactForm{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contactFormContainer{
+        gap: 8px;
+        border-radius: 5px;
+    }
+
+    .contactName input{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactName input::placeholder{
+        font-size: 12px;
+    }
+
+    .contactEmail input{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactEmail input::placeholder{
+        font-size: 12px;
+    }
+
+    .contactMessage{
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .contactMessage textarea{
+        font-size: 12px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .contactMessage textarea::placeholder{
+        font-size: 12px;
+    }
+
+    .submitBtnContainer button{
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}

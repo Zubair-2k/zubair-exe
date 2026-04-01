@@ -1,0 +1,68 @@
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.footerLogo{
+    width: 100px;
+}
+
+.footerLogoImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footerNavItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerNavItem{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.footerNavItem:hover{
+    color: orangered;
+}
+
+.footerCredit{
+    padding: 1rem 0;
+    /* color: orangered; */
+    color:#ffdab5;
+}
+
+@media (max-width: 480px) {
+    .footer{
+        font-size: 10px;
+    }
+
+    .footerContainer{
+        font-size: 10px;
+    }
+
+    .footerNavItems{
+        gap: 10px;
+    }
+}
