@@ -82,7 +82,6 @@ const About = () => {
                     <div className="aboutContent1">
                         <div className="welcomeText">Vanakkam,</div>
                         <div className="introText">I am <span className="aboutName">Zubair</span></div>
-                        {/* <div className="jobIntro">Creative Head</div> */}
                     </div>
 
                     <div className="aboutContent2">
@@ -117,7 +116,7 @@ const About = () => {
                 </div>
 
                 <div className="aboutMeImgContainer">
-                    <img src="/SketchImg-bgremoved-copy-5.png" alt="About-Img" className='aboutMeImg'/>
+                    <img src="/SketchImg-bgremoved-copy-5.webp" alt="About-Img" className='aboutMeImg'/>
                 </div>
             </div>
 

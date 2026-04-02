@@ -17,23 +17,17 @@ const Projects = () => {
             const container = projectsContainerRef.current;
             const rect = container.getBoundingClientRect();
 
-            // Check if mouse is inside the projects section
-            if (
-            e.clientX < rect.left ||
-            e.clientX > rect.right ||
-            e.clientY < rect.top ||
-            e.clientY > rect.bottom
-            ) {
-            gsap.to(previewRef.current, {
-                opacity: 0,
-                duration: 0.2
-            });
-            return;
+            if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom ) {
+                gsap.to(previewRef.current, {
+                    opacity: 0,
+                    duration: 0.2
+                });
+                return;
             }
 
             gsap.set(previewRef.current,{
-            x: e.clientX - rect.left - 450,
-            y: e.clientY - rect.top - 130
+                x: e.clientX - rect.left - 450,
+                y: e.clientY - rect.top - 130
             });
 
         };
@@ -130,7 +124,7 @@ const Projects = () => {
                 </div>
 
                 <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Bottle_Animation.png")}
+                onMouseEnter={()=>handleMouseEnter("/Bottle_Animation.webp")}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -151,7 +145,7 @@ const Projects = () => {
                 </div>
 
                 <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Portfolio_V1_Website.png")}
+                onMouseEnter={()=>handleMouseEnter("/Portfolio_V1_Website.webp")}
                 onMouseLeave={handleMouseLeave}
                 >
 

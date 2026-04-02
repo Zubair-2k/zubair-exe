@@ -29,11 +29,11 @@ const Experiences = () => {
     }
 
     useGSAP(()=>{
-        
-        gsap.set(skillsContainerRef.current, { xPercent: -10 });
+
+        gsap.set(skillsContainerRef.current, { xPercent: 5 });
 
         marqueeRef.current = gsap.to(skillsContainerRef.current, {
-            xPercent: -116.5,
+            xPercent: -100,
             duration: 15,
             ease: "none",
             repeat: -1
@@ -92,8 +92,6 @@ const Experiences = () => {
                 ...prev,
                 { type: "command", content: "> experience --list" },
 
-                // { type: "spacer" },
-
                 { type: "list", items: [
                 "1. Frontend Developer + Data Engineer @ Tringapps Inc.",
                 "2024 — 2025 [COMPLETED]",
@@ -110,8 +108,6 @@ const Experiences = () => {
                 ...prev,
                 { type: "command", content: "> experience 1" },
 
-                // { type: "spacer" },
-
                 { type: "info", label: "Role", value: "Frontend Developer + Data Engineer" },
                 { type: "info", label: "Company", value: "Tringapps Inc." },
                 { type: "info", label: "Duration", value: "2024 — 2025" },
@@ -125,7 +121,6 @@ const Experiences = () => {
                 "Developed responsive components"
                 ]},
 
-                // { type: "spacer" },
 
                 { type: "section", title: "[Data Engineering]" },
                 { type: "list", items: [
@@ -141,8 +136,6 @@ const Experiences = () => {
             setLines((prev) => [
                 ...prev,
                 { type: "command", content: "> experience 2" },
-
-                // { type: "spacer" },
 
                 { type: "info", label: "Role", value: "Frontend Developer (Freelance)" },
                 { type: "info", label: "Type", value: "Self-Employed" },
@@ -209,7 +202,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="JavaScript">
 
                     <div className="skillImgContainer">
-                        <img src="/JS_logo.png" alt="JS_Logo" className="skillImg jsImg"
+                        <img src="/JS_logo.webp" alt="JS_Logo" className="skillImg jsImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -219,7 +212,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="React">
 
                     <div className="skillImgContainer">
-                        <img src="/ReactJS_Logo.png" alt="ReactJS_Logo" className="skillImg reactImg"
+                        <img src="/ReactJS_Logo.webp" alt="ReactJS_Logo" className="skillImg reactImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -229,7 +222,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Node JS">
 
                     <div className="skillImgContainer">
-                        <img src="/NodeJs_Logo.png" alt="NodeJS_Logo" className="skillImg nodeImg"
+                        <img src="/NodeJs_Logo.webp" alt="NodeJS_Logo" className="skillImg nodeImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -239,7 +232,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="MongoDB">
 
                     <div className="skillImgContainer">
-                        <img src="/MongoDB_Logo.png" alt="MongoDB_Logo" className="skillImg mongodbImg"
+                        <img src="/MongoDB_Logo.webp" alt="MongoDB_Logo" className="skillImg mongodbImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -259,7 +252,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Python">
 
                     <div className="skillImgContainer">
-                        <img src="/Python_Logo.png" alt="Python_Logo" className="skillImg pythonImg"
+                        <img src="/Python_Logo.webp" alt="Python_Logo" className="skillImg pythonImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -289,7 +282,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="JavaScript">
 
                     <div className="skillImgContainer">
-                        <img src="/JS_logo.png" alt="JS_Logo" className="skillImg jsImg"
+                        <img src="/JS_logo.webp" alt="JS_Logo" className="skillImg jsImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -299,7 +292,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="React">
 
                     <div className="skillImgContainer">
-                        <img src="/ReactJS_Logo.png" alt="ReactJS_Logo" className="skillImg reactImg"
+                        <img src="/ReactJS_Logo.webp" alt="ReactJS_Logo" className="skillImg reactImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -309,7 +302,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Node JS">
 
                     <div className="skillImgContainer">
-                        <img src="/NodeJs_Logo.png" alt="NodeJS_Logo" className="skillImg nodeImg"
+                        <img src="/NodeJs_Logo.webp" alt="NodeJS_Logo" className="skillImg nodeImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -319,7 +312,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="MongoDB">
 
                     <div className="skillImgContainer">
-                        <img src="/MongoDB_Logo.png" alt="MongoDB_Logo" className="skillImg mongodbImg"
+                        <img src="/MongoDB_Logo.webp" alt="MongoDB_Logo" className="skillImg mongodbImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -339,9 +332,9 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Python">
 
                     <div className="skillImgContainer">
-                        <img src="/Python_Logo.png" alt="Python_Logo" className="skillImg pythonImg"
+                        <img src="/Python_Logo.webp" alt="Python_Logo" className="skillImg pythonImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
-  onMouseLeave={() => marqueeRef.current.resume()}/>
+                        onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
 
                  </div>

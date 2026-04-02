@@ -62,21 +62,19 @@ const Header = () => {
     const interval = setInterval(() => {
         setDisplayText((prev) => {
 
-            // 👉 typing forward
             if (isHover && prev.length < text.length) {
                 return text.slice(0, prev.length + 1);
             }
 
-            // 👉 deleting backward
             if (!isHover && prev.length > 0) {
                 return prev.slice(0, -1);
             }
 
-            return prev; // stop when done
+            return prev;
 
         });
 
-    }, isHover ? 80 : 50); // speed changes automatically
+    }, isHover ? 80 : 50);
 
     return () => clearInterval(interval);
 
@@ -101,7 +99,6 @@ const Header = () => {
                       window.history.replaceState(null, null, `${capId}`);
                     }
 
-                    // window.history.replaceState(null,null,`${capId}`);
                 }
             });
 
@@ -267,23 +264,7 @@ const Header = () => {
         duration: 1,
         repeat:-1,
         yoyo: true,
-      },"seeMyWorkAnimate") 
-
-      // .from(".headerContent1SmallText",{
-      //   y: 10,
-      //   duration: 1,
-      //   repeat:-1,
-      //   yoyo: true
-      // },"headerSmallContentAnimate")
-      
-      // .from(".headerContent2SmallText",{
-      //   y: -10,
-      //   duration: 1,
-      //   repeat:-1,
-      //   yoyo: true
-      // },"headerSmallContentAnimate")
-
-      // erase initial FRONTEND DEVELOPER
+      },"seeMyWorkAnimate")
 
       tl3.to({},{
         delay:1,
@@ -434,11 +415,6 @@ const Header = () => {
 
               <a 
               onClick={(e)=> handleNavClick(e,"About")}>About</a>
-
-              {/* <a 
-              href="#projectsHeader"
-              onClick={(e)=> handleNavClick(e,"Projects")}>Projects</a>
-               */}
 
               <a 
               onClick={(e)=> handleNavClick(e,"projectsHeader")}>Projects</a>

@@ -140,7 +140,7 @@ const Contact = () => {
         <div className="contact" ref={contactRef} id="contact">
 
             <div className="contactPageBg">
-                <img src="/ContactPageBgImg_4.png" alt="ContactPageBgImg" className="ContactPageBgImg"/>
+                <img src="/ContactPageBgImg_4.webp" alt="ContactPageBgImg" className="ContactPageBgImg"/>
             </div>
 
             <div className="contactPageOverlay"></div>
@@ -178,8 +178,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="getInTouchContentContainerText">
-                                        {/* zubair2kdeveloper@gmail.com */}
-                                        cooketamil@gmail.com
+                                        zubair2kdeveloper@gmail.com
                                     </div>
 
                                 </div>
@@ -221,7 +220,7 @@ const Contact = () => {
                                     </div>
 
                                     <div className="getInTouchContentContainerText">
-                                        8754779201
+                                        +91 6374232052
                                     </div>
 
                                 </div>
@@ -293,7 +292,6 @@ const Contact = () => {
                             name='name'
                             value={message.name}
                             onChange={handleFormChange}
-                            // autoComplete='true'
                             required/>
                         </div>
 
@@ -304,7 +302,6 @@ const Contact = () => {
                             name='email' 
                             value={message.email}
                             onChange={handleFormChange}
-                            // autoComplete='true' 
                             required/>  
 
                             {emailStatus && <p className="emailStatus">{emailStatus}</p>} 

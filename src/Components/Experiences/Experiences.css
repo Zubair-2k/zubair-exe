@@ -3,16 +3,13 @@
     src: url("/fonts/monaco.ttf")
     format("truetype");
 }
-@font-face {
-    font-family: "ConsolaMono_Book";
-    src: url("/fonts/ConsolaMono-Book.ttf")
-    format("truetype");
-}
+
 @font-face {
     font-family: "ConsolaMono_Bold";
     src: url("/fonts/ConsolaMono-Bold.ttf")
     format("truetype");
 }
+
 @font-face {
     font-family: "Terminal";
     src: url("/fonts/Terminal\ F4.ttf")
@@ -233,17 +230,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* font-family: "MonacoCustom", monospace;
-    font-size: 22px; */
-    /* font-weight: 900; */
-    /* letter-spacing: 2px; */
     font-family: "Terminal", monospace;
 }
 
 .terminalContent{
     padding: 1rem 1.5rem;
     text-align: left;
-    /* font-family: "Terminal", monospace; */
     font-family: "MonacoCustom", monospace;
     font-size: 22px;
     background-color: rgb(14, 14, 14);
