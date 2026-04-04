@@ -113,7 +113,7 @@ const Projects = () => {
                     My Projects
                 </div>
                 <div className="projectsTagArrow">
-                    <img src="/White_Icon_Arrow.png" alt="" className="projectsTagArrowImg"/>
+                    <img src={`${import.meta.env.BASE_URL}White_Icon_Arrow.png`} alt="Project_Arrow_Icon" className="projectsTagArrowImg"/>
                 </div>
             </div>
 
@@ -123,8 +123,10 @@ const Projects = () => {
                     <img className="projectPreview" alt="" />
                 </div>
 
-                <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Bottle_Animation.webp")}
+                <a className="projectsContent"
+                href="http://localhost:5175/GSAP_Crimson/"
+                target="blank"
+                onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Bottle_Animation.webp`)}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -142,10 +144,12 @@ const Projects = () => {
                     <div className="projectStatus">
                        [ Open ]
                     </div>
-                </div>
+                </a>
 
-                <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Portfolio_V1_Website.webp")}
+                <a className="projectsContent"
+                href="http://localhost:5174/"
+                target="blank"
+                onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Portfolio_V1_Website.webp`)}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -165,10 +169,12 @@ const Projects = () => {
                        [ Open ]
                     </div>
 
-                </div>
+                </a>
 
-                <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Cooking_App.webp")}
+                <a className="projectsContent"
+                href="http://localhost:5176/"
+                target="blank"
+                onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Cooking_App.webp`)}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -188,10 +194,12 @@ const Projects = () => {
                         [ Open ]
                     </div>
 
-                </div>
+                </a>
 
-                <div className="projectsContent"
-                onMouseEnter={()=>handleMouseEnter("/Spiderman_Website.webp")}
+                <a className="projectsContent"
+                href="http://localhost:5177/Spiderman_Game/"
+                target="blank"
+                onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Spiderman_Website.webp`)}
                 onMouseLeave={handleMouseLeave}
                 >
 
@@ -209,10 +217,10 @@ const Projects = () => {
                         [ Open ]
                     </div>
 
-                </div>
+                </a>
 
                 <div className="projectsContent" 
-                onMouseEnter={()=>handleMouseEnter("/StreamFlix_Website.webp")}
+                onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}StreamFlix_Website.webp`)}
                 onMouseLeave={handleMouseLeave}
                 >
 

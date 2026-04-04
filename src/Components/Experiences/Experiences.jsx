@@ -182,7 +182,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="HTML">
 
                     <div className="skillImgContainer">
-                        <img src="/HTML_Logo.webp" alt="HTML_Logo" className="skillImg htmlImg" 
+                        <img src={`${import.meta.env.BASE_URL}HTML_Logo.webp`} alt="HTML_Logo" className="skillImg htmlImg" 
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -192,7 +192,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="CSS">
 
                     <div className="skillImgContainer">
-                        <img src="/CSS_Logo.png" alt="CSS_Logo" className="skillImg cssImg"
+                        <img src={`${import.meta.env.BASE_URL}CSS_Logo.png`} alt="CSS_Logo" className="skillImg cssImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -202,7 +202,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="JavaScript">
 
                     <div className="skillImgContainer">
-                        <img src="/JS_logo.webp" alt="JS_Logo" className="skillImg jsImg"
+                        <img src={`${import.meta.env.BASE_URL}JS_logo.webp`} alt="JS_Logo" className="skillImg jsImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -212,7 +212,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="React">
 
                     <div className="skillImgContainer">
-                        <img src="/ReactJS_Logo.webp" alt="ReactJS_Logo" className="skillImg reactImg"
+                        <img src={`${import.meta.env.BASE_URL}ReactJS_Logo.webp`} alt="ReactJS_Logo" className="skillImg reactImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -222,7 +222,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Node JS">
 
                     <div className="skillImgContainer">
-                        <img src="/NodeJs_Logo.webp" alt="NodeJS_Logo" className="skillImg nodeImg"
+                        <img src={`${import.meta.env.BASE_URL}NodeJs_Logo.webp`} alt="NodeJS_Logo" className="skillImg nodeImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -232,7 +232,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="MongoDB">
 
                     <div className="skillImgContainer">
-                        <img src="/MongoDB_Logo.webp" alt="MongoDB_Logo" className="skillImg mongodbImg"
+                        <img src={`${import.meta.env.BASE_URL}MongoDB_Logo.webp`} alt="MongoDB_Logo" className="skillImg mongodbImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -242,7 +242,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="GitHub">
 
                     <div className="skillImgContainer">
-                        <img src="/GitHub_Logo.png" alt="Github_Logo" className="skillImg githubImg"
+                        <img src={`${import.meta.env.BASE_URL}GitHub_Logo.png`} alt="Github_Logo" className="skillImg githubImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -252,7 +252,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Python">
 
                     <div className="skillImgContainer">
-                        <img src="/Python_Logo.webp" alt="Python_Logo" className="skillImg pythonImg"
+                        <img src={`${import.meta.env.BASE_URL}Python_Logo.webp`} alt="Python_Logo" className="skillImg pythonImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -262,7 +262,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="HTML">
 
                     <div className="skillImgContainer">
-                        <img src="/HTML_Logo.webp" alt="HTML_Logo" className="skillImg htmlImg" 
+                        <img src={`${import.meta.env.BASE_URL}HTML_Logo.webp`} alt="HTML_Logo" className="skillImg htmlImg" 
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -272,7 +272,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="CSS">
 
                     <div className="skillImgContainer">
-                        <img src="/CSS_Logo.png" alt="CSS_Logo" className="skillImg cssImg"
+                        <img src={`${import.meta.env.BASE_URL}CSS_Logo.png`} alt="CSS_Logo" className="skillImg cssImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -282,7 +282,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="JavaScript">
 
                     <div className="skillImgContainer">
-                        <img src="/JS_logo.webp" alt="JS_Logo" className="skillImg jsImg"
+                        <img src={`${import.meta.env.BASE_URL}JS_logo.webp`} alt="JS_Logo" className="skillImg jsImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -292,7 +292,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="React">
 
                     <div className="skillImgContainer">
-                        <img src="/ReactJS_Logo.webp" alt="ReactJS_Logo" className="skillImg reactImg"
+                        <img src={`${import.meta.env.BASE_URL}ReactJS_Logo.webp`} alt="ReactJS_Logo" className="skillImg reactImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -302,7 +302,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Node JS">
 
                     <div className="skillImgContainer">
-                        <img src="/NodeJs_Logo.webp" alt="NodeJS_Logo" className="skillImg nodeImg"
+                        <img src={`${import.meta.env.BASE_URL}NodeJs_Logo.webp`} alt="NodeJS_Logo" className="skillImg nodeImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -312,7 +312,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="MongoDB">
 
                     <div className="skillImgContainer">
-                        <img src="/MongoDB_Logo.webp" alt="MongoDB_Logo" className="skillImg mongodbImg"
+                        <img src={`${import.meta.env.BASE_URL}MongoDB_Logo.webp`} alt="MongoDB_Logo" className="skillImg mongodbImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -322,7 +322,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="GitHub">
 
                     <div className="skillImgContainer">
-                        <img src="/GitHub_Logo.png" alt="Github_Logo" className="skillImg githubImg"
+                        <img src={`${import.meta.env.BASE_URL}GitHub_Logo.png`} alt="Github_Logo" className="skillImg githubImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
   onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -332,7 +332,7 @@ const Experiences = () => {
                  <div className="skillsAnimationContent" title="Python">
 
                     <div className="skillImgContainer">
-                        <img src="/Python_Logo.webp" alt="Python_Logo" className="skillImg pythonImg"
+                        <img src={`${import.meta.env.BASE_URL}Python_Logo.webp`} alt="Python_Logo" className="skillImg pythonImg"
                         onMouseEnter={() => marqueeRef.current.pause()}
                         onMouseLeave={() => marqueeRef.current.resume()}/>
                     </div>
@@ -344,7 +344,7 @@ const Experiences = () => {
             <div className="skillsTag">
 
                 <div className="skillsTagArrow">
-                    <img src="/rightDownAboutIcon.png" alt="topSkillIcon" className="skillsTagArrowIcon" />
+                    <img src={`${import.meta.env.BASE_URL}rightDownAboutIcon.png`} alt="topSkillIcon" className="skillsTagArrowIcon" />
                 </div>
 
                 <div className="skillTagText">
@@ -451,7 +451,7 @@ const Experiences = () => {
             <div className="experiencesTag">
 
                 <div className="expTagArrow">
-                    <img src="/rightDownExpIcon.png" alt="rightExpIcon" className="expTagArrowIcon" />
+                    <img src={`${import.meta.env.BASE_URL}rightDownExpIcon.png`} alt="rightExpIcon" className="expTagArrowIcon" />
                 </div>
 
                 <div className="expTagText">

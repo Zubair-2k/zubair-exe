@@ -93,7 +93,7 @@ const About = () => {
                             </div>
 
                             <div className="downAboutIcon">
-                                <img src="/rightDownAboutIcon.png" alt="rightDownAboutIcon" className="rightDownAboutIcon"/>
+                                <img src={`${import.meta.env.BASE_URL}rightDownAboutIcon.png`} alt="rightDownAboutIcon" className="rightDownAboutIcon"/>
                             </div>
                             
                         </div>
@@ -116,7 +116,7 @@ const About = () => {
                 </div>
 
                 <div className="aboutMeImgContainer">
-                    <img src="/SketchImg-bgremoved-copy-5.webp" alt="About-Img" className='aboutMeImg'/>
+                    <img src={`${import.meta.env.BASE_URL}SketchImg-bgremoved-copy-5.webp`} alt="About-Img" className='aboutMeImg'/>
                 </div>
             </div>
 

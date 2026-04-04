@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="footerContainer">
 
                 <div className="footerLogo">
-                    <img src="/logoImg.jpg" alt="logoImg" className="footerLogoImg"/>
+                    <img src={`${import.meta.env.BASE_URL}logoImg.jpg`} alt="logoImg" className="footerLogoImg"/>
                 </div>
 
                 <div className="footerNavItems">

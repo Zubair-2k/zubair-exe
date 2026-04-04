@@ -52,7 +52,10 @@
     transition: all 0.2s linear;
     font-family: "Space Grotesk", sans-serif;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
+
 
 .projectsContent:hover{
   /* border-bottom: 2px solid #ffdab5; */

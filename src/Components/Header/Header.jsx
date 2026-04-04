@@ -53,7 +53,7 @@ const Header = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Zubair_A-Resume.pdf";
+    link.href = `${import.meta.env.BASE_URL}Zubair_A-Resume.pdf`;
     link.download = "Zubair_A_Resume.pdf";
     link.click();
   };
@@ -342,7 +342,7 @@ const Header = () => {
           <nav className="headerNav">
 
             <div className="logo">
-              <img src="/logoImg.jpg" alt="logoImg" className="logoImg"/>
+              <img src={`${import.meta.env.BASE_URL}logoImg.jpg`} alt="logoImg" className="logoImg"/>
             </div>
 
             <div className="collapseNav" 

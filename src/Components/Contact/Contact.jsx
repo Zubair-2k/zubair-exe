@@ -140,7 +140,7 @@ const Contact = () => {
         <div className="contact" ref={contactRef} id="contact">
 
             <div className="contactPageBg">
-                <img src="/ContactPageBgImg_4.webp" alt="ContactPageBgImg" className="ContactPageBgImg"/>
+                <img src={`${import.meta.env.BASE_URL}ContactPageBgImg_4.webp`} alt="ContactPageBgImg" className="ContactPageBgImg"/>
             </div>
 
             <div className="contactPageOverlay"></div>
@@ -232,7 +232,7 @@ const Contact = () => {
 
                                 <div className="getInTouchContentApplyIcon"
                                 onClick={()=>{
-                                        navigator.clipboard.writeText("+918754779201");
+                                        navigator.clipboard.writeText("6374232052");
                                         alert("Number is copied ...");
                                     }    
                                 }>
