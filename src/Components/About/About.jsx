@@ -8,8 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
     const aboutRef = useRef(null);
+    const isMobile = window.innerWidth < 768;
 
     useGSAP(()=>{
+
+        if(isMobile) return;
 
         const ctx = gsap.context(()=>{
 

@@ -45,9 +45,9 @@
 }
 
 @media (max-width: 480px) {
-  .projectsHeader{
+  /* .projectsHeader{
     width: 0%;
     height: 0;
     display: none;
-  }
+  } */
 }

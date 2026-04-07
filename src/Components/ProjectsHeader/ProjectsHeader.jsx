@@ -8,8 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectsHeader = () => {
 
     const projectsHeaderRef = useRef(null)
+    const isMobile = window.innerWidth < 1024;
 
     useLayoutEffect(()=>{
+        if(isMobile) return;
+
         const ctx = gsap.context(()=>{
 
         gsap.to(".projectsHeaderText",{

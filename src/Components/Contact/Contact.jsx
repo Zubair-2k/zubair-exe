@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
     const contactRef = useRef(null);
+    const isMobile = window.innerWidth < 768;
 
     const [emailStatus, setEmailStatus] = useState("");
     const [message, setMessage] = useState({name:"",email:"",feedback:""});
@@ -73,6 +74,7 @@ const Contact = () => {
     };
 
     useGSAP(()=>{
+        if(isMobile) return;
 
         const ctx = gsap.context(()=>{
 

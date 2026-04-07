@@ -9,10 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
     const projectsContainerRef = useRef(null);
     const previewRef =useRef(null);
+    const isMobile = window.innerWidth < 768;
 
     useLayoutEffect(() => {
 
         const handleMove = (e) => {
+            if(isMobile) return;
 
             const container = projectsContainerRef.current;
             const rect = container.getBoundingClientRect();
@@ -39,6 +41,9 @@ const Projects = () => {
     },[]);
 
     useGSAP(()=>{
+
+        if(isMobile) return;
+
         const ctx = gsap.context(()=>{
             
             const tl1 = gsap.timeline({
@@ -84,6 +89,8 @@ const Projects = () => {
 
     const handleMouseEnter = (img) => {
 
+        if(isMobile) return;
+
         previewRef.current.querySelector("img").src = img;
 
         gsap.to(previewRef.current,{
@@ -95,6 +102,8 @@ const Projects = () => {
     }
 
     const handleMouseLeave = () => {
+        if(isMobile) return;
+        
         gsap.to(previewRef.current,{
             opacity:0,
             scale:0.85,

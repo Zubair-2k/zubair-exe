@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 
 const Experiences = () => {
     const [lines, setLines] = useState([]);
+    const isMobile = window.innerWidth < 768;
 
     const [minimize, setMinimize] = useState(false);
     const [fullScreen, setFullScreen] = useState(false);
@@ -38,6 +39,8 @@ const Experiences = () => {
             ease: "none",
             repeat: -1
         });
+
+        if(isMobile) return;
 
         const tl1 = gsap.timeline({
             scrollTrigger:{

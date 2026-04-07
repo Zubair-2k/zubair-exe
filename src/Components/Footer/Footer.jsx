@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
     const footerRef = useRef(null);
+    const isMobile = window.innerWidth < 768;
 
     const handleFooterNavClick = (e,sid) =>{
         e.preventDefault();
@@ -24,6 +25,7 @@ const Footer = () => {
     }
 
     useGSAP(()=>{
+        if(isMobile) return;
 
         const ctx = gsap.context(()=>{
 
