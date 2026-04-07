@@ -133,7 +133,7 @@ const Projects = () => {
                 </div>
 
                 <a className="projectsContent"
-                href="http://localhost:5175/GSAP_Crimson/"
+                href="https://zubair-2k.github.io/GSAP_Crimson/"
                 target="blank"
                 onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Bottle_Animation.webp`)}
                 onMouseLeave={handleMouseLeave}
@@ -156,7 +156,7 @@ const Projects = () => {
                 </a>
 
                 <a className="projectsContent"
-                href="http://localhost:5174/"
+                href="https://zubair-2k.github.io/Portfolio/"
                 target="blank"
                 onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Portfolio_V1_Website.webp`)}
                 onMouseLeave={handleMouseLeave}
@@ -206,7 +206,7 @@ const Projects = () => {
                 </a>
 
                 <a className="projectsContent"
-                href="http://localhost:5177/Spiderman_Game/"
+                href="https://zubair-2k.github.io/Spiderman_Game/"
                 target="blank"
                 onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Spiderman_Website.webp`)}
                 onMouseLeave={handleMouseLeave}
