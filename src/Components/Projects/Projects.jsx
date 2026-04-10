@@ -181,7 +181,7 @@ const Projects = () => {
                 </a>
 
                 <a className="projectsContent"
-                href="http://localhost:5176/"
+                href="https://zubair-2k.github.io/Cooking-App/"
                 target="blank"
                 onMouseEnter={()=>handleMouseEnter(`${import.meta.env.BASE_URL}Cooking_App.webp`)}
                 onMouseLeave={handleMouseLeave}
