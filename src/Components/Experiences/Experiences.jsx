@@ -97,9 +97,9 @@ const Experiences = () => {
 
                 { type: "list", items: [
                 "1. Frontend Developer + Data Engineer @ Tringapps Inc.",
-                "2024 — 2025 [COMPLETED]",
+                "2021 — 2023 [COMPLETED]",
                 "2. Freelance Frontend Developer (Self-Employed)",
-                "2025 — Present [ACTIVE]"
+                "2023 — Present [ACTIVE]"
                 ]},
 
                 { type: "spacer" },
@@ -113,7 +113,7 @@ const Experiences = () => {
 
                 { type: "info", label: "Role", value: "Frontend Developer + Data Engineer" },
                 { type: "info", label: "Company", value: "Tringapps Inc." },
-                { type: "info", label: "Duration", value: "2024 — 2025" },
+                { type: "info", label: "Duration", value: "2021 — 2023" },
                 { type: "info", label: "Status", value: "COMPLETED" },
 
                 { type: "spacer" },
@@ -142,7 +142,7 @@ const Experiences = () => {
 
                 { type: "info", label: "Role", value: "Frontend Developer (Freelance)" },
                 { type: "info", label: "Type", value: "Self-Employed" },
-                { type: "info", label: "Duration", value: "2025 — Present" },
+                { type: "info", label: "Duration", value: "2023 — Present" },
                 { type: "info", label: "Status", value: "ACTIVE" },
 
                 { type: "spacer" },
